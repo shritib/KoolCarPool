@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/userIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="left"
+        android:text="UserId"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/userId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:ems="10"
+        android:inputType="text"
+        android:autoText="true"
+        android:editable="true"
+        android:textColor="#ffffff" />
+
+
+    <RadioGroup
+        android:id="@+id/radiogrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        android:background="#000000"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:text="Leecher"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.32"
+            android:checked="true"
+            android:text="Seeder"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="right"
+        android:fillViewport="true" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="50dp"
+            android:text="Login"
+            android:textSize="20sp"
+            android:background="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.flipkart.koolcarpool.LoginActivity">
+
+        <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>-->
